@@ -1,9 +1,11 @@
 import React from 'react';
+import logo from "../../assets/Image/logo.png"
 
 const Home = () => {
     return (
-        <div>
-            This is Home page
+        <div className='h-[500px]'>
+            {/* This is Home page */}
+            <img className='rounded-md' src={logo} alt="" />
         </div>
     );
 };
