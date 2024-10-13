@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaRegEye } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 // import project from '../../../assets/Image/core.PNG'
 // import project from '../../../assets/Image/core.png'
 
@@ -45,12 +47,17 @@ const CaseStudies = () => {
                             <p className="text-gray-200 mb-4">{caseStudy.description}</p>
 
                             {/* CTA Button */}
-                            <a
-                                href={caseStudy.link}
-                                className="text-yellow-500 hover:text-yellow-600 font-medium"
-                            >
-                                View Details
-                            </a>
+                            <div className='flex justify-between items-center'>
+                                <a
+                                    href={caseStudy.link}
+                                    className="text-yellow-500 hover:text-yellow-600 font-medium"
+                                >
+                                    View Details
+                                </a>
+                                <NavLink>
+                                    <FaRegEye className='rounded-lg text-yellow-500 text-2xl' />
+                                </NavLink>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -59,9 +66,9 @@ const CaseStudies = () => {
                 <div className="text-center mt-8">
                     <a
                         href="/portfolio"
-                        className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded"
+                        className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded font-semibold uppercase"
                     >
-                        See Full Portfolio
+                        See Portfolio
                     </a>
                 </div>
             </div>

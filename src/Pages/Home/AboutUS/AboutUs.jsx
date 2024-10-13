@@ -3,7 +3,7 @@ import Section from '../../../Components/Section/Section';
 
 const AboutUs = () => {
     return (
-        <section className="bg-gray-100 py-12" id="about">
+        <section className="bg-gray-100 py-4" id="about">
             {/* <Section title='About US'/> */}
             <div className="container mx-auto px-6 md:px-12 lg:px-24">
                 <div className="flex justify-between md:flex-row flex-col-reverse md:gap-8 items-center">

@@ -7,7 +7,7 @@ const HexaBytes = () => {
     return (
         <div className='primary-background'>
             <Navbar />
-            <div className='conatiner mx-auto px-10 py-4'>
+            <div className='conatiner mx-auto md:px-10 px-4 py-4'>
                 <Outlet />
             </div>
             <Footer/>

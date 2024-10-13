@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaLaptopCode, FaMobileAlt, FaPalette } from 'react-icons/fa'; // Example icons for services
+import { FiArrowUpRight } from 'react-icons/fi';
+import { NavLink } from 'react-router-dom';
 
 const Services = () => {
     const services = [
@@ -33,7 +35,7 @@ const Services = () => {
                 {/* Grid Layout for Services */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-gray-100  p-6 rounded-lg shadow-lg text-center">
+                        <div key={index} className="bg-gray-300  p-6 rounded-lg shadow-lg text-center">
                             {/* Icon */}
                             <div className="text-4xl flex justify-center  mb-4">
                                 {service.icon}
@@ -46,12 +48,15 @@ const Services = () => {
                             <p className=" mb-4 text-gray-700">{service.description}</p>
 
                             {/* CTA Button */}
-                            <a
-                                href={service.link}
+                           <NavLink className='flex gap-1 items-center justify-center'>
+                           <p
                                 className="text-yellow-500 hover:text-yellow-600 font-medium"
                             >
                                 Learn More
-                            </a>
+
+                            </p>
+                            <FiArrowUpRight className='text-yellow-500 text-xl' />
+                           </NavLink>
                         </div>
                     ))}
                 </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
     return (
         <section
-            className="bg-gradient-to-r from-[#658baf] to-[#123955] text-white h-[300px] flex items-center justify-center"
+            className="bg-gradient-to-r from-[#658baf] to-[#123955] text-white md:h-[300px] h-[400px] flex items-center justify-center"
         >
             <div className="text-center px-4">
                 {/* Headline */}
