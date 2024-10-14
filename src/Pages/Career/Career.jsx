@@ -1,12 +1,12 @@
 import React from 'react';
 import CaseStudies from '../CaseStudies/CaseStudies';
 
-const ContactUs = () => {
+const Career = () => {
     return (
-        <div>
+        <div className=''>
             <CaseStudies/>
         </div>
     );
 };
 
-export default ContactUs;
+export default Career;

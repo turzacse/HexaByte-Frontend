@@ -10,13 +10,17 @@
 // };
 
 // export default About;
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from '../../Components/Heading/Heading';
 import MeetOurTeam from '../Home/MeetOurTeam/MeetOurTeam';
 import OurValues from './OurValues';
 import Mission from './Mission';
+import image from '../../assets/Image/about.png'
 
 const About = () => {
+    useEffect(() => {
+        window.scroll(0,0);
+    } ,[])
     return (
         <div className="bg-gray-100">
             {/* Hero Section */}
@@ -32,7 +36,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 p-4 flex justify-end">
-                        <img src="https://backend.whalesai.com/public/imageai/13102024-8622c7.png" alt="Our Team" className="rounded-lg shadow-lg h-[300px]" />
+                        <img src={image} alt="Our Team" className="rounded-lg shadow-lg h-[300px]" />
                         {/* <img src="https://backend.whalesai.com/public/imageai/13102024-9c2e91.png" alt="Our Team" className="rounded-lg shadow-lg h-[350px]" /> */}
                     </div>
                 </div>

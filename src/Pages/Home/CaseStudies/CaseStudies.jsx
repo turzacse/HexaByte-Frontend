@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaRegEye } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-// import project from '../../../assets/Image/core.PNG'
-// import project from '../../../assets/Image/core.png'
+import CustomButton from '../../../Components/Primary/CustomButton';
 
 const CaseStudies = () => {
     const caseStudies = [
@@ -65,15 +64,7 @@ const CaseStudies = () => {
                     ))}
                 </div>
 
-                {/* Full Portfolio CTA */}
-                <div className="text-center mt-8">
-                    <a
-                        href="/portfolio"
-                        className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded font-semibold uppercase"
-                    >
-                        See Portfolio
-                    </a>
-                </div>
+                <CustomButton text='See Portfolio' />
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from "../../assets/Image/logo.png"
 import Section from '../../Components/Section/Section';
 import HeroSection from './Hero/HeroSection';
@@ -10,6 +10,9 @@ import MeetOurTeam from './MeetOurTeam/MeetOurTeam';
 import GetInTouch from './GetInTouch/GetInTouch';
 
 const Home = () => {
+    useEffect(() => {
+        window.scroll(0,0);
+    } ,[])
     return (
         <div className=''>
             <HeroSection/>

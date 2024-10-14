@@ -32,7 +32,7 @@ const Navbar = () => {
 
                 <div className="space-x-6 hidden md:flex">
                     {Links.map((item) => (
-                        <NavLink key={item.key} to={item.address} className="hover:text-gray-300">
+                        <NavLink key={item.key} to={item.address} className="hover:text-gray-300 uppercase font-semibold">
                             {item.title}
                         </NavLink>
                     ))}
@@ -62,7 +62,7 @@ const Navbar = () => {
                                 <li key={item.key}>
                                     <NavLink
                                         to={item.address}
-                                        className=" hover:text-[#658baf] text-lg"
+                                        className=" hover:text-[#658baf] uppercase md:text-lg text-[14px] font-semibold "
                                         onClick={toggleDrawer}
                                     >
                                         {item.title}

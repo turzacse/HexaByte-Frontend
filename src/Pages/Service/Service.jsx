@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from '../../Components/Heading/Heading';
 import Services from '../Home/Service/Service';
 import HowWeWork from '../../Components/HowWeWork/HowWeWork';
 import { serviceData } from '../../Data/ServiceData';
+import CustomButton from '../../Components/Primary/CustomButton';
 
 const Service = () => {
 
-
+    useEffect(() => {
+        window.scroll(0,0);
+    } ,[])
     return (
         <div>
             <Heading title='Our Service' description='Empowering Your Business with Tailored Solutions: Explore Our Range of Services Designed to Elevate Your Digital Presence and Drive Success.' />
@@ -53,8 +56,8 @@ const Service = () => {
             </div>
 
             <section className='bg-gradient-to-r from-[#658baf] to-[#123955] py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center'>
-                <h2 className='text-white text-2xl font-bold text-center'>Let's Discuss your project</h2>
-                <button className='mt-6 primary-button hover:bg-yellow-600 hover:text-white btn rounded-lg text-center px-4 py-2'>Lets Talk</button>
+                <h2 className='text-white text-2xl font-bold text-center'>Let's Discuss Your Project</h2>
+                <CustomButton text={`Let's talk`} />
             </section>
         </div>
     );
