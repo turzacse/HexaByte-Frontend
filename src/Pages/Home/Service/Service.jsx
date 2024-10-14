@@ -28,6 +28,7 @@ const Services = () => {
 
     return (
         <section className="bg-gradient-to-r from-[#658baf] to-[#123955] py-12" id="services">
+            
             <div className="container mx-auto px-6 md:px-12 lg:px-24">
                 {/* Title */}
                 <h2 className="text-3xl font-bold text-center text-white mb-8">Our Services</h2>
@@ -59,6 +60,7 @@ const Services = () => {
                            </NavLink>
                         </div>
                     ))}
+                    
                 </div>
             </div>
         </section>

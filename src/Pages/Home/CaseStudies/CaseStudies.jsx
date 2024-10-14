@@ -10,19 +10,22 @@ const CaseStudies = () => {
             title: 'E-commerce Platform',
             description: 'Developed a scalable e-commerce platform that supports thousands of users globally.',
             // imageUrl: project, 
-            link: '/case-studies/e-commerce'
+            link: '/case-studies/e-commerce',
+            id: '001p'
         },
         {
             title: 'Mobile Banking App',
             description: 'Created a mobile banking app with top-notch security features and user-friendly interface.',
             // imageUrl: project,
-            link: '/case-studies/mobile-banking'
+            link: '/case-studies/mobile-banking',
+            id: '002p'
         },
         {
             title: 'Healthcare Portal',
             description: 'Built a healthcare platform to help patients book appointments and access medical history online.',
             // imageUrl: project,
-            link: '/case-studies/healthcare'
+            link: '/case-studies/healthcare',
+            id: '003p'
         },
         // Add more case studies as needed
     ];
@@ -48,12 +51,12 @@ const CaseStudies = () => {
 
                             {/* CTA Button */}
                             <div className='flex justify-between items-center'>
-                                <a
-                                    href={caseStudy.link}
+                                <NavLink
+                                    to={`/case-studies/${caseStudy?.id}`}
                                     className="text-yellow-500 hover:text-yellow-600 font-medium"
                                 >
                                     View Details
-                                </a>
+                                </NavLink>
                                 <NavLink>
                                     <FaRegEye className='rounded-lg text-yellow-500 text-2xl' />
                                 </NavLink>

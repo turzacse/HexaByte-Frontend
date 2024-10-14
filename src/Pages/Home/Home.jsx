@@ -12,17 +12,10 @@ import GetInTouch from './GetInTouch/GetInTouch';
 const Home = () => {
     return (
         <div className=''>
-            {/* This is Home page */}
             <HeroSection/>
-            {/* <img className='rounded-md' src={logo} alt="" /> */}
-            {/* <Section title='About US'/> */}
             <AboutUs/>
-            {/* <Section title='What We Offer'/> */}
-            {/* <Section title='What We Offer'/> */}
             <Services/>
-            {/* <Section title='Case Studies'/> */}
             <CaseStudies/>
-
             <Testimonials/>
             <MeetOurTeam/>
             <GetInTouch/>
