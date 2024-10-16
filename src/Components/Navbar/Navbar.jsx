@@ -13,6 +13,7 @@ const Navbar = () => {
         { key: 4, title: 'Career', address: '/career' },
         { key: 5, title: 'Case Studies', address: '/case-studies' },
         { key: 6, title: 'Contact', address: '/contact-us' },
+        { key: 6, title: 'How We Work', address: '/how-we-work' },
     ];
 
     const toggleDrawer = () => {
@@ -32,9 +33,19 @@ const Navbar = () => {
 
                 <div className="space-x-6 hidden md:flex">
                     {Links.map((item) => (
-                        <NavLink key={item.key} to={item.address} className="hover:text-gray-300 uppercase font-semibold">
+                        // <NavLink key={item.key} to={item.address} className="hover:text-gray-300 uppercase font-semibold">
+                        //     {item.title}
+                        // </NavLink>
+                        <NavLink
+                            key={item.key}
+                            to={item.address}
+                            className={({ isActive }) =>
+                                isActive ? "text-yellow-500 uppercase font-semibold" : "hover:text-gray-300 uppercase font-semibold"
+                            }
+                        >
                             {item.title}
                         </NavLink>
+
                     ))}
                 </div>
 
@@ -56,13 +67,22 @@ const Navbar = () => {
                             />
                         </div>
 
-
+                        {/* for mobile device  */}
                         <ul className="flex flex-col space-y-2 px-4">
                             {Links.map((item) => (
                                 <li key={item.key}>
-                                    <NavLink
+                                    {/* <NavLink
                                         to={item.address}
                                         className=" hover:text-[#658baf] uppercase md:text-lg text-[14px] font-semibold "
+                                        onClick={toggleDrawer}
+                                    >
+                                        {item.title}
+                                    </NavLink> */}
+                                    <NavLink
+                                        to={item.address}
+                                        className={({ isActive }) =>
+                                            isActive ? "text-yellow-500 uppercase md:text-lg text-[14px] font-semibold" : "hover:text-[#658baf] uppercase md:text-lg text-[14px] font-semibold"
+                                        }
                                         onClick={toggleDrawer}
                                     >
                                         {item.title}
