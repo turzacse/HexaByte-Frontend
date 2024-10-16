@@ -9,6 +9,10 @@ import Service from "../Pages/Service/Service";
 import Testimonial from "../Pages/Testimonial/Testimonial";
 import Career from "../Pages/Career/Career";
 import CaseStudies from "../Pages/CaseStudies/CaseStudies";
+import HowWeWork from "../Components/HowWeWork/HowWeWork";
+import CaseStudyDetail from "../Pages/CaseStudies/CaseStudyDetail";
+import Teacher from "../Pages/Teacher/Teacher";
+// import HowWeWork from "../Pages/HowWeWork/HowWeWork";
 
 
 
@@ -47,8 +51,16 @@ export const router = createBrowserRouter([
         element: <CaseStudies />
       },
       {
-        path: '/case-studies/:case',
-        element: <Testimonial />
+        path: '/how-we-work',
+        element: <HowWeWork />
+      },
+      {
+        path: '/teacher',
+        element: <Teacher />
+      },
+      {
+        path: '/case-study/:id',
+        element: <CaseStudyDetail />
       }
     ]
   },

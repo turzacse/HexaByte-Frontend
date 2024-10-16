@@ -16,13 +16,14 @@ import MeetOurTeam from '../Home/MeetOurTeam/MeetOurTeam';
 import OurValues from './OurValues';
 import Mission from './Mission';
 import image from '../../assets/Image/about.png'
+import CustomButton from '../../Components/Primary/CustomButton';
 
 const About = () => {
     useEffect(() => {
         window.scroll(0,0);
     } ,[])
     return (
-        <div className="bg-gray-100">
+        <div className="bg-gray-100 pb-12">
             {/* Hero Section */}
             <Heading title='About Us' description='Innovative software solutions to power your business.' />
 
@@ -45,6 +46,7 @@ const About = () => {
 
             {/* Our Values Section */}
             <OurValues/>
+            
             {/* <section className="bg-gradient-to-r from-[#658baf] to-[#123955] container mx-auto px-6 md:px-12 lg:px-24 py-12">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold text-white">Our Values</h2>
@@ -70,6 +72,8 @@ const About = () => {
 
             {/* Meet Our Team Section */}
             <MeetOurTeam/>
+
+            <CustomButton text='see our work procedure' link='/how-we-work' />
 
 
         </div>

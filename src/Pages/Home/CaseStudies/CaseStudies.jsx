@@ -64,7 +64,7 @@ const CaseStudies = () => {
                     ))}
                 </div>
 
-                <CustomButton text='See Portfolio' />
+                <CustomButton text='See Portfolio' link='/case-studies' />
             </div>
         </section>
     );

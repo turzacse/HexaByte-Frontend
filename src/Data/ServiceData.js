@@ -3,6 +3,7 @@ import img2 from '../assets/Image/Services/service2.png'
 import img3 from '../assets/Image/Services/service3.png'
 import img4 from '../assets/Image/Services/service4.png'
 import img5 from '../assets/Image/Services/service5.png'
+import img6 from '../assets/Image/Services/service6.png'
 
 
 export const serviceData = [
@@ -80,6 +81,23 @@ export const serviceData = [
         "Usability testing and feedback integration"
       ],
       img:img5
+    },
+    {
+      id: 6,
+      title: 'Personalized Student Care',
+      description: 'Personalized Student Care focuses on providing CSE students with tailored support for their academic needs, programming, and problem-solving skills, ensuring their growth and development in the field.',
+      workProcedure: 'We offer one-on-one sessions, study plans, and guidance to help students with course content, hands-on programming exercises, and problem-solving strategies to enhance their learning experience.',
+      language: ['Python', 'C++', 'Java', 'Data Structures', 'Algorithms', 'Web Development Basics', 'Competitive Programming'],
+      offer: [
+        'Custom study plans and academic guidance',
+        'Programming exercises with real-time feedback',
+        'Help with academic projects and assignments',
+        'Problem-solving strategies and competitive programming preparation',
+        'Ongoing mentorship and career advice'
+      ],
+      prompt: true,
+      img: img6
     }
+    
   ]
   

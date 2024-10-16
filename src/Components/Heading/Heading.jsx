@@ -7,12 +7,12 @@ const Heading = ({ title, description }) => {
         >
             <div className="text-center px-4">
                 {/* Headline */}
-                <h1 className="text-4xl font-bold mb-2">
+                <h1 className="md:text-4xl text-2xl font-bold mb-2 uppercase">
                     {title}
                 </h1>
 
                 {/* Subheading */}
-                <p className="text-lg mb-6 max-w-2xl mx-auto">
+                <p className="md:text-lg text-[12px] mb-6 max-w-2xl mx-auto text-gray-200">
                     {description}
                 </p>
                 

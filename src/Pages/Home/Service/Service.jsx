@@ -4,28 +4,53 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
 import CustomButton from '../../../Components/Primary/CustomButton';
 
+import icon1 from '../../../assets/Icon/Service/s1.png'
+import icon2 from '../../../assets/Icon/Service/s2.png'
+import icon3 from '../../../assets/Icon/Service/s3.png'
+import icon4 from '../../../assets/Icon/Service/s4.png'
+import icon5 from '../../../assets/Icon/Service/s5.png'
+import icon6 from '../../../assets/Icon/Service/s6.png'
+
 const Services = () => {
     const services = [
         {
-            title: 'Web Development',
-            description: 'Custom web development services for businesses, creating high-performance and scalable websites.',
-            icon: <FaLaptopCode />,
-            link: '/services/web-development'
+            title: 'Front End Development',
+            description: 'Building responsive, high-performance, and interactive front-end interfaces using modern technologies.',
+            icon: icon1,
+            link: '/services/front-end-development'
         },
         {
-            title: 'Mobile App Development',
-            description: 'Expertise in creating mobile apps for both iOS and Android platforms with modern user experiences.',
-            icon: <FaMobileAlt />,
-            link: '/services/mobile-app-development'
+            title: 'Backend Development',
+            description: 'Expertise in server-side development, databases, and APIs to power web applications efficiently.',
+            icon: icon2,
+            link: '/services/backend-development'
+        },
+        {
+            title: 'Full Stack Web Development',
+            description: 'Complete web development services from front-end to back-end, offering end-to-end solutions.',
+            icon: icon3,
+            link: '/services/full-stack-web-development'
+        },
+        {
+            title: 'Portfolio Design & Development',
+            description: 'Custom portfolio design and development to showcase your work, skills, and projects effectively.',
+            icon: icon4,
+            link: '/services/portfolio-design-development'
         },
         {
             title: 'UI/UX Design',
-            description: 'Professional UI/UX design services to ensure user-friendly and visually appealing interfaces.',
-            icon: <FaPalette />,
+            description: 'Designing intuitive, user-friendly, and visually appealing interfaces for websites and mobile apps.',
+            icon: icon5,
             link: '/services/ui-ux-design'
         },
-        // You can add more services here
+        {
+            title: 'Personalized Student Care',
+            description: 'Tailored academic support and programming guidance for CSE students, focusing on problem-solving and project development.',
+            icon: icon6,
+            link: '/services/personalized-student-care'
+        }
     ];
+    
 
     return (
         <section className="bg-gradient-to-r from-[#658baf] to-[#123955] py-12" id="services">
@@ -36,9 +61,10 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div key={index} className="bg-gray-300  p-6 rounded-lg shadow-lg text-center">
-                            <div className="text-4xl flex justify-center  mb-4">
+                            {/* <div className="text-4xl flex justify-center  mb-4">
                                 {service.icon}
-                            </div>
+                            </div> */}
+                            <img className='w-[80px] h-[80px] mx-auto' src={service.icon} alt="" />
 
                             <h3 className="text-xl font-semibold mb-2 text-[#123955]">{service.title}</h3>
                             <p className=" mb-4 text-gray-700">{service.description}</p>

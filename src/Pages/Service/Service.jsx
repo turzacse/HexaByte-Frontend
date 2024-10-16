@@ -12,7 +12,7 @@ const Service = () => {
     } ,[])
     return (
         <div>
-            <Heading title='Our Service' description='Empowering Your Business with Tailored Solutions: Explore Our Range of Services Designed to Elevate Your Digital Presence and Drive Success.' />
+            <Heading title='Our Services' description='Empowering Your Business with Tailored Solutions: Explore Our Range of Services Designed to Elevate Your Digital Presence and Drive Success.' />
 
             <div className='bg-gray-200 py-12 container mx-auto px-6 md:px-12 lg:px-24'>
                 {
@@ -26,14 +26,19 @@ const Service = () => {
                                     src={service.img}
                                     alt=""
                                 />
+                                <div className='md:ml-44 ml-12'>
+                                {
+                                    service.prompt && <CustomButton text='See Your Personalized Teacher' link ='/teacher' />
+                                }
+                                </div>
 
                             </div>
-                            <div className={`flex-1 text-justify mt-10 flex flex-col`}>
-                                <p className='text-gray-600' >{service.description}</p>
-                                <p className='text-gray-600'>{service.workProcedure}</p>
+                            <div className={`flex-1  mt-12 flex flex-col text-[14px] md:text-[16px]`}>
+                                <p className='text-gray-600 text-justify' >{service.description}</p>
+                                <p className='text-gray-600 text-justify'>{service.workProcedure}</p>
 
                                 <div>
-                                    <h2 className="text-lg font-semibold mb-2 text-gray-800" >Languague Stack: </h2>
+                                    <h2 className="text-lg font-semibold my-2 text-gray-800" >Languague Stack: </h2>
                                     <ul className="list-disc list-inside">
                                         {service.language.map((item, index) => (
                                             <li key={index} className="text-gray-600">{item}</li>
@@ -42,7 +47,7 @@ const Service = () => {
                                 </div>
 
                                 <div>
-                                    <h2 className="text-lg font-semibold mb-2 text-gray-800" >What we offer: </h2>
+                                    <h2 className="text-lg font-semibold my-2 text-gray-800" >What we offer: </h2>
                                     <ul className="list-disc list-inside">
                                         {service.offer.map((item, index) => (
                                             <li key={index} className="text-gray-600">{item}</li>
@@ -57,7 +62,7 @@ const Service = () => {
 
             <section className='bg-gradient-to-r from-[#658baf] to-[#123955] py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center'>
                 <h2 className='text-white text-2xl font-bold text-center'>Let's Discuss Your Project</h2>
-                <CustomButton text={`Let's talk`} />
+                <CustomButton text={`Let's talk`} link='/contact-us' />
             </section>
         </div>
     );
