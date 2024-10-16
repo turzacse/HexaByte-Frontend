@@ -23,7 +23,7 @@ const CaseStudies = () => {
                         {caseStudiesData.map((study, index) => (
                             <div key={index} className="border p-4 rounded-lg shadow-md bg-gradient-to-r from-[#658baf] to-[#123955] text-white hover:shadow-lg transition-shadow duration-300">
                                 <img src='https://backend.whalesai.com/public/imageai/15102024-ff8230.png' alt={study.title} className="w-full h-48 object-cover rounded-md mb-4" />
-                                <h3 className="text-2xl font-bold ">{study.title}</h3>
+                                <h3 className="md:text-xl font-bold ">{study.title}</h3>
                                 <p className=" mt-2 mb-4">{study.shortDescription}</p>
                                 <NavLink to={`/case-study/${study.id}`} className="text-yellow-500 font-semibold hover:underline">Details</NavLink>
                             </div>

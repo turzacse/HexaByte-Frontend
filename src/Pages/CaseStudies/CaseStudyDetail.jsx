@@ -20,13 +20,17 @@ const CaseStudyDetail = () => {
                     <div className="flex items-center gap-5 ">
                         <h1 className="md:text-4xl text-xl font-bold text-[#123955] md:mb-4 mb-2">{caseStudy.title}</h1>
                         <FaEye
-                         onClick={() => {
-                            window.open(caseStudy?.link, '_blank');
-                        }}
-                        className='md:text-4xl text-xl text-[#305776] cursor-pointer ' />
+                            onClick={() => {
+                                window.open(caseStudy?.link, '_blank');
+                            }}
+                            className='md:text-4xl text-xl text-[#305776] cursor-pointer ' />
                     </div>
                     <img src={caseStudy.image} alt={caseStudy.title} className=" w-full md:h-[500px] h-[200px] object-cover rounded-lg mb-6" />
-                    <p className="text-lg text-gray-700 mb-4">{caseStudy.fullDescription}</p>
+                    {/* <p className="text-lg text-gray-700 text-justify mb-4">{caseStudy.fullDescription}</p> */}
+                    {caseStudy?.fullDescription?.split('\\n')?.map((paragraph, index) => (
+                        <p key={index} className="text-lg text-gray-700 text-justify mb-4">{paragraph}</p>
+                    ))}
+
 
                     <h3 className="md:text-2xl font-bold text-[#123955] mb-2">Features:</h3>
                     <ul className="list-disc pl-6 mb-4">
