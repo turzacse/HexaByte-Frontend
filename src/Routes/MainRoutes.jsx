@@ -12,6 +12,11 @@ import CaseStudies from "../Pages/CaseStudies/CaseStudies";
 import HowWeWork from "../Components/HowWeWork/HowWeWork";
 import CaseStudyDetail from "../Pages/CaseStudies/CaseStudyDetail";
 import Teacher from "../Pages/Teacher/Teacher";
+import HexaByteAdmin from "../Layout/HexaByteAdmin";
+import Dashboard from "../AdminPages/Dashboard/Dashboard";
+import Users from "../AdminPages/Users/Users";
+import Contact from "../AdminPages/Contact/Contact";
+import JobCircular from "../AdminPages/JobCircular/JobCircular";
 // import HowWeWork from "../Pages/HowWeWork/HowWeWork";
 
 
@@ -64,4 +69,26 @@ export const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: '/admin',
+    element: <HexaByteAdmin/>,
+    children:[
+      {
+        path: '/admin/dashboard',
+        element: <Dashboard/>
+      },
+      {
+        path: '/admin/users',
+        element: <Users/>
+      },
+      {
+        path: '/admin/contacts',
+        element: <Contact/>
+      },
+      {
+        path: '/admin/circular',
+        element: <JobCircular/>
+      }
+    ]
+  }
 ]);

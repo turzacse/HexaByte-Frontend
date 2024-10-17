@@ -14,6 +14,7 @@ const Navbar = () => {
         { key: 5, title: 'Case Studies', address: '/case-studies' },
         { key: 6, title: 'Contact', address: '/contact-us' },
         { key: 6, title: 'How We Work', address: '/how-we-work' },
+        { key: 6, title: 'Admin', address: '/admin' },
     ];
 
     const toggleDrawer = () => {
