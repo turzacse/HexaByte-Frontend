@@ -7,10 +7,13 @@ const HexaByteAdmin = () => {
     return (
         <div className="flex h-screen">
             {/* Left Sidebar */}
+            <div className='hidden md:block'>
             <LeftSidebar />
+            </div>
+           
 
             {/* Main content area */}
-            <div className="flex-grow p-6 bg-gray-300 overflow-y-auto min-h-screen">
+            <div className="flex-grow p-6 bg-gray-300 overflow-y-auto min-h-screen  ">
                 {/* The content of the current route */}
                 <Outlet />
             </div>

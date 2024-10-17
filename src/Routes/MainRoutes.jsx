@@ -17,6 +17,9 @@ import Dashboard from "../AdminPages/Dashboard/Dashboard";
 import Users from "../AdminPages/Users/Users";
 import Contact from "../AdminPages/Contact/Contact";
 import JobCircular from "../AdminPages/JobCircular/JobCircular";
+import Emploee from "../AdminPages/Emploee/Emploee";
+import Instructor from "../AdminPages/Instructor/Instructor";
+import Project from "../AdminPages/Project/Projects";
 // import HowWeWork from "../Pages/HowWeWork/HowWeWork";
 
 
@@ -88,6 +91,18 @@ export const router = createBrowserRouter([
       {
         path: '/admin/circular',
         element: <JobCircular/>
+      },
+      {
+        path: '/admin/employees',
+        element: <Emploee/>
+      },
+      {
+        path: '/admin/instructors',
+        element: <Instructor/>
+      },
+      {
+        path: '/admin/projects',
+        element: <Project/>
       }
     ]
   }

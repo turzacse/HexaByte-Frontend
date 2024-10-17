@@ -9,13 +9,13 @@ const LeftSidebar = () => {
     const Links = [
         { key: 1, title: 'Dashboard', icon: <FaHome />, address: '/admin/dashboard' },
         { key: 2, title: 'Users', icon: <FaUser />, address: '/admin/users' },
-        { key: 4, title: 'Employees', icon: <IoPeopleSharp />, address: '/admin/employee' },
-        { key: 4, title: 'Instructors', icon: <IoPeopleSharp />, address: '/admin/instructor' },
+        { key: 4, title: 'Employees', icon: <IoPeopleSharp />, address: '/admin/employees' },
+        { key: 4, title: 'Instructors', icon: <IoPeopleSharp />, address: '/admin/instructors' },
         // { key: 3, title: 'Settings', icon: <FaCogs />, address: '/admin/settings' },
         { key: 3, title: 'Contacts', icon: <FaMessage />, address: '/admin/contacts' },
         { key: 4, title: 'Circulars', icon: <FaAddressCard />, address: '/admin/circular' },
         
-        { key: 4, title: 'Projects', icon: <FaDiagramProject />, address: '/admin/project' },
+        { key: 4, title: 'Projects', icon: <FaDiagramProject />, address: '/admin/projects' },
         
     ];
 

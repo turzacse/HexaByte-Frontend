@@ -4,14 +4,11 @@ import { NavLink } from 'react-router-dom';
 const Dashboard = () => {
     const data = [
         { title: 'users', number: 143, link: '/admin/users' },
-        { title: 'employes', number: 9, link: '/admin/employee'  },
-        { title: 'instructors', number: 5, link: '/'  },
+        { title: 'employes', number: 9, link: '/admin/employees'  },
+        { title: 'instructors', number: 5, link: '/admin/instructors'  },
         { title: 'Contacts', number: 99, link: '/admin/contacts'  },
         { title: 'Circulars', number: 2, link: '/admin/circular'  },
-        
-        
-        { title: 'projects', number: 5, link: '/'  },
-        // { title: 'ongoing', number: 2, link: '/'  },
+        { title: 'projects', number: 5, link: '/admin/projects'  },
         
     ]
 
@@ -20,7 +17,7 @@ const Dashboard = () => {
     ];
     // '#2196F3',
     return (
-        <div>
+        <div className='p-4'>
             <div className='grid gap-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
                 {
                     data.map((item, i) =>
