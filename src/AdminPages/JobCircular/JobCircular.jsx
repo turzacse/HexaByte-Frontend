@@ -9,33 +9,43 @@ const JobCircular = () => {
             position: 'Frontend Developer',
             vacancy: 3,
             deadline: '2024-11-30',
+            department: 'Software'
         },
         {
             _id: '2',
             position: 'Backend Developer',
             vacancy: 2,
             deadline: '2024-12-15',
+            department: 'Software'
         },
         {
             _id: '3',
             position: 'UI/UX Designer',
             vacancy: 1,
             deadline: '2024-11-25',
+            department: 'Design'
         },
     ];
 
     return (
         <div className="p-4">
             <h2 className="text-2xl font-bold uppercase text-[#123955] mb-4">Circulars</h2>
-            <div className='mb-4'>
+            <div className='mb-4 flex justify-between items-center'>
                 <input type="text" className='px-2 py-2 rounded-md bg-gray-50 text-[#123955] md:w-[300px] w-full' name="search" placeholder='search' />
+                <button className='btn uppercase bg-[#3a5dc0] text-white px-4 py-2 rounded-lg'>post Circular</button>
             </div>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-gray-50 border border-gray-300">
+                    {/* <thead className="bg-[#658baf]">
+                        <tr>
+                            <td colSpan="6" className="px-4 text-center py-4">Yes</td>
+                        </tr>
+                    </thead> */}
                     <thead className="bg-[#658baf] pt-10 text-white">
                         <tr className='text-left'>
                             <th className="px-4 py-2 border-b">S/no</th>
                             <th className="px-4 py-2 border-b">Position</th>
+                            <th className="px-4 py-2 border-b">Department</th>
                             <th className="px-4 py-2 border-b">Vacancy</th>
                             <th className="px-4 py-2 border-b">Dateline</th>
                             <th className="px-4 py-2 border-b">Action</th>
@@ -46,6 +56,7 @@ const JobCircular = () => {
                             <tr key={job._id} className="">
                                 <td className="px-4 py-2 border-b">{index + 1}</td>
                                 <td className="px-4 py-2 border-b">{job.position}</td>
+                                <td className="px-4 py-2 border-b">{job.department}</td>
                                 <td className="px-4 py-2 border-b">{job.vacancy}</td>
                                 <td className="px-4 py-2 border-b">{job.deadline}</td>
                                 <td className="px-4 py-2 border-b space-x-2">
@@ -61,7 +72,7 @@ const JobCircular = () => {
                     </tbody>
                     <tfoot className="bg-[#658baf]">
                         <tr>
-                            <td colSpan="5" className="px-4 py-4"></td>
+                            <td colSpan="6" className="px-4 py-4"></td>
                         </tr>
                     </tfoot>
                 </table>

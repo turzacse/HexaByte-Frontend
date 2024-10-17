@@ -46,8 +46,9 @@ const Emploee = () => {
     return (
         <div className="p-4">
             <h2 className="text-2xl font-bold uppercase text-[#123955] mb-4">Employees</h2>
-            <div className='mb-4'>
+            <div className='mb-4 flex justify-between items-center'>
                 <input type="text" className='px-2 py-2 rounded-md bg-gray-50 text-[#123955] md:w-[300px] w-full' name="search" placeholder='search' />
+                <button className='btn bg-[#3a5dc0] text-white px-4 py-2 rounded-lg'>ADD EMPLOYEE</button>
             </div>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-gray-50 border border-gray-300">
