@@ -3,7 +3,7 @@ import React from 'react';
 const Heading = ({ title, description }) => {
     return (
         <section
-            className="bg-gradient-to-r from-[#658baf] to-[#123955] text-white h-[200px] flex items-center justify-center"
+            className="bg-gradient-to-r from-[#658baf] to-[#123955] text-white md:h-[200px] h-[120px] flex items-center justify-center"
         >
             <div className="text-center px-4">
                 {/* Headline */}
