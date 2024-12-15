@@ -8,6 +8,7 @@ import CaseStudies from './CaseStudies/CaseStudies';
 import Testimonials from './Testimonials/Testimonials';
 import MeetOurTeam from './MeetOurTeam/MeetOurTeam';
 import GetInTouch from './GetInTouch/GetInTouch';
+import Banner from './Banner/Banner';
 
 const Home = () => {
     useEffect(() => {
@@ -15,7 +16,8 @@ const Home = () => {
     } ,[])
     return (
         <div className=''>
-            <HeroSection/>
+            {/* <HeroSection/> */}
+            <Banner/>
             <AboutUs/>
             <Services/>
             <CaseStudies/>
