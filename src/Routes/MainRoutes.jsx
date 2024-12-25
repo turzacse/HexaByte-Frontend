@@ -20,6 +20,7 @@ import JobCircular from "../AdminPages/JobCircular/JobCircular";
 import Emploee from "../AdminPages/Emploee/Emploee";
 import Instructor from "../AdminPages/Instructor/Instructor";
 import Project from "../AdminPages/Project/Projects";
+import LandingPage from "../Pages/LandingPage/LandingPage";
 // import HowWeWork from "../Pages/HowWeWork/HowWeWork";
 
 
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/landing-page',
+        element: <LandingPage />
       },
       {
         path: '/about',

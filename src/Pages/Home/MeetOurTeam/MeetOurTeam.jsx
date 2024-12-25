@@ -68,7 +68,7 @@ const MeetOurTeam = () => {
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-gradient-to-r from-[#658baf] to-[#123955] p-6 rounded-lg shadow-lg text-center">
                             {/* Team Member Image */}
-                            <img src={member.imageUrl||img} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
+                            <img src={member.imageUrl} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
 
                             {/* Name and Position */}
                             <h3 className="text-xl font-semibold uppercase text-[#fff]">{member.name}</h3>
