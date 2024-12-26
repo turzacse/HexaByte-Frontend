@@ -36,20 +36,49 @@ const OurValues = () => {
     ];
 
     return (
-        <section className="bg-gradient-to-r from-[#658baf] to-[#123955] container mx-auto px-6 md:px-12 lg:px-24 py-12">
-            <div className="container mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-6 text-white">Our Values</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {values.map((value, index) => (
-                        <div key={index} className="border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <img src={value.logo} className='h-[60px] w-[60px] mx-auto ' alt="" />
-                            <h3 className="text-xl font-semibold mb-2 text-white mt-2">{value.title}</h3>
-                            <p className="text-gray-200">{value.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+        <section className="relative container mx-auto px-6 md:px-12 lg:px-24 py-12">
+  {/* Background video */}
+  <video
+    autoPlay
+    loop
+    muted
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/values.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+  {/* Gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#658baf] to-[#123955] opacity-75"></div>
+  
+  {/* Content */}
+  <div className="relative text-center">
+    <h2   data-aos="fade-up"
+        data-aos-duration="1000" className="text-3xl font-bold mb-6 text-white">Our Values</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {values.map((value, index) => (
+        <div
+          key={index}
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay={`${index * 300}`}
+          className="border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <img
+            src={value.logo}
+            className="h-[60px] w-[60px] mx-auto"
+            alt=""
+          />
+          <h3 className="text-xl font-semibold mb-2 text-white mt-2">
+            {value.title}
+          </h3>
+          <p className="text-gray-200">{value.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
     );
 };
 

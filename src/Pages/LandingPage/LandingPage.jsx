@@ -7,6 +7,7 @@ import Testimonials from "../Home/Testimonials/Testimonials";
 import MeetOurTeam from "../Home/MeetOurTeam/MeetOurTeam";
 import GetInTouch from "../Home/GetInTouch/GetInTouch";
 import Banner from "../Home/Banner/Banner";
+import OurValues from "../About/OurValues";
 
 const LandingPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ const LandingPage = () => {
           {/* <HeroSection/> */}
           <Banner />
           <AboutUs />
+          <OurValues/>
           <Services />
           <CaseStudies />
           <Testimonials />

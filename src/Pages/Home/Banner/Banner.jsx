@@ -28,7 +28,7 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="500"
-          className="text-lg md:text-xl mb-8"
+          className="text-lg text-black md:text-xl mb-8"
         >
           Empowering innovation through technology.
         </p>
@@ -36,7 +36,7 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="1400"
           data-aos-delay="700"
-          className="text-base md:text-lg italic mb-8"
+          className="text-base text-black md:text-lg italic mb-8"
         >
           "Building a better future, byte by byte."
         </p>
@@ -54,7 +54,7 @@ const Banner = () => {
            data-aos="fade-up"
            data-aos-duration="1600"
            data-aos-delay="900"
-          className="bg-white-500 text-white px-6 py-3 text-lg rounded-md ml-4 hover:bg-yellow-600 transition"
+          className="bg-white-500 text-black px-6 py-3 text-lg rounded-md ml-4 hover:bg-yellow-600 transition"
           onClick={() => alert("Get a Quote!")}
         >
           Get a Quote
