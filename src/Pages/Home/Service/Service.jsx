@@ -53,7 +53,7 @@ const Services = () => {
 
 
   return (
-    <section className="relative bg-white m-5 py-12" id="services">
+    <section className="relative bg-white py-12" id="services">
     {/* Background Video */}
     <video
       className="absolute top-0 left-0 w-full h-full object-cover z-0"

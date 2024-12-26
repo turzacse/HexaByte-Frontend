@@ -60,7 +60,7 @@ const MeetOurTeam = () => {
   ];
 
   return (
-    <section className="relative m-5 bg-[#fff] py-12" id="meet-our-team">
+    <section className="relative bg-[#fff] py-12" id="meet-our-team">
     {/* Background Video */}
     <video
       className="absolute top-0 left-0 w-full h-full object-cover z-0"

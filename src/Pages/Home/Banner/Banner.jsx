@@ -5,6 +5,9 @@ const Banner = () => {
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video
+       data-aos="fade-left"
+       data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
         className="absolute inset-0 w-full h-full object-cover"
         src="/banner background.mp4" // Replace with the actual video file path
         autoPlay
@@ -13,14 +16,15 @@ const Banner = () => {
       ></video>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-black/0"></div>
 
       {/* Content Section */}
       <div className="relative z-10 text-center text-white">
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-4xl md:text-6xl font-bold mb-6"
+          className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+"
         >
           Welcome to HexaByte™
         </h1>
@@ -28,7 +32,7 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="500"
-          className="text-lg text-black md:text-xl mb-8"
+          className="text-lg text-[#39357D] md:text-xl mb-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
         >
           Empowering innovation through technology.
         </p>
@@ -36,7 +40,7 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="1400"
           data-aos-delay="700"
-          className="text-base text-black md:text-lg italic mb-8"
+          className="text-base text-[#39357D] md:text-lg italic mb-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
         >
           "Building a better future, byte by byte."
         </p>
@@ -54,7 +58,7 @@ const Banner = () => {
            data-aos="fade-up"
            data-aos-duration="1600"
            data-aos-delay="900"
-          className="bg-white-500 text-black px-6 py-3 text-lg rounded-md ml-4 hover:bg-yellow-600 transition"
+          className="bg-white-500 text-[#39357D] px-6 py-3 text-lg rounded-md ml-4 hover:bg-yellow-600 transition drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           onClick={() => alert("Get a Quote!")}
         >
           Get a Quote

@@ -97,8 +97,8 @@ const Service = () => {
         ))}
       </div>
 
-      <section className="bg-gradient-to-r from-[#658baf] to-[#123955] py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center">
-        <h2 data-aos="fade-down" className="text-white text-2xl font-bold text-center">
+      <section className="bg-white py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center">
+        <h2 data-aos="fade-down" className="text-[#39357D] text-2xl font-bold text-center">
           Let's Discuss Your Project
         </h2>
         <CustomButton text={`Let's talk`} link="/contact-us" />
