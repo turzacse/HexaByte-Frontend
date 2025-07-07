@@ -12,9 +12,9 @@ const Service = () => {
     } ,[])
     return (
         <div>
-            <Heading title='Our Services' description='Empowering Your Business with Tailored Solutions: Explore Our Range of Services Designed to Elevate Your Digital Presence and Drive Success.' />
-
-            <div className='bg-gray-200 py-12 container mx-auto px-6 md:px-12 lg:px-24'>
+            <Heading title='Our Services' description='Explore Our Range of Services Designed to Elevate Your Digital Presence.' />
+            {/* bg-gray-200 */}
+            <div className=' py-12 container mx-auto px-6 md:px-12 lg:px-24'>
                 {
                     serviceData?.map((service) => <div key={service.id}>
                         <div className={`flex flex-col justify-between mb-10 ${service.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
@@ -60,8 +60,9 @@ const Service = () => {
                 }
             </div>
 
-            <section className='bg-gradient-to-r from-[#658baf] to-[#123955] py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center'>
-                <h2 className='text-white text-2xl font-bold text-center'>Let's Discuss Your Project</h2>
+            {/* bg-gradient-to-r from-[#658baf] to-[#123955]  */}
+            <section className='py-12 container mx-auto px-6 md:px-12 lg:px-24 text-center'>
+                <h2 className='text-[#123955] text-2xl font-bold text-center'>Let's Discuss Your Project</h2>
                 <CustomButton text={`Let's talk`} link='/contact-us' />
             </section>
         </div>

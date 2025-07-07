@@ -5,7 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import { FaArrowAltCircleDown, FaArrowAltCircleUp } from 'react-icons/fa';
 
 const HexaBytes = () => {
-    const [showScrollUp, setShowScrollUp] = useState(false);
+  const [showScrollUp, setShowScrollUp] = useState(false);
   const [showScrollDown, setShowScrollDown] = useState(true);
 
   const checkScrollPosition = () => {
@@ -43,53 +43,55 @@ const HexaBytes = () => {
       window.removeEventListener("scroll", checkScrollPosition);
     };
   }, [showScrollUp, showScrollDown]);
-    return (
-        <div className='primary-background'>
-            <Navbar />
-            <div className=''>
-                <div className=''>
-                    {showScrollUp && (
-                        <FaArrowAltCircleUp
-                            onClick={scrollTop}
-                            className="fixed pulse-animation"
-                            style={{
-                                bottom: "20px",
-                                right: "20px",
-                                padding: "5px",
-                                backgroundColor: "#FD7E14",
-                                color: "white",
-                                borderRadius: "50%",
-                                cursor: "pointer",
-                                zIndex: 1000,
-                                fontSize: "2rem",
-                                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-                            }}
-                        />
-                    )}
-                    {showScrollDown && (
-                        <FaArrowAltCircleDown
-                            onClick={scrollBottom}
-                            className="fixed pulse-animation"
-                            style={{
-                                bottom: "20px",
-                                right: "20px",
-                                padding: "5px",
-                                backgroundColor: "#20C997", // Coral color
-                                color: "white",
-                                borderRadius: "50%",
-                                cursor: "pointer",
-                                zIndex: 1000,
-                                fontSize: "2rem",
-                                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional shadow
-                            }}
-                        />
-                    )}
-                    <Outlet />
-                </div>
-            </div>
-            <Footer />
+  return (
+    <div className='primary-background'>
+      <div className='fixed top-0 left-0 w-full z-50'>
+        <Navbar />
+      </div>
+      <div className='md:mt-[64px] mt-[56px]'>
+        <div className=''>
+          {showScrollUp && (
+            <FaArrowAltCircleUp
+              onClick={scrollTop}
+              className="fixed pulse-animation"
+              style={{
+                bottom: "20px",
+                right: "20px",
+                padding: "5px",
+                backgroundColor: "#FD7E14",
+                color: "white",
+                borderRadius: "50%",
+                cursor: "pointer",
+                zIndex: 1000,
+                fontSize: "2rem",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+              }}
+            />
+          )}
+          {showScrollDown && (
+            <FaArrowAltCircleDown
+              onClick={scrollBottom}
+              className="fixed pulse-animation"
+              style={{
+                bottom: "20px",
+                right: "20px",
+                padding: "5px",
+                backgroundColor: "#20C997", // Coral color
+                color: "white",
+                borderRadius: "50%",
+                cursor: "pointer",
+                zIndex: 1000,
+                fontSize: "2rem",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional shadow
+              }}
+            />
+          )}
+          <Outlet />
         </div>
-    );
+      </div>
+      <Footer />
+    </div>
+  );
 };
 
 export default HexaBytes;

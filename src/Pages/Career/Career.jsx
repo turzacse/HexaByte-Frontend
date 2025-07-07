@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CaseStudies from '../CaseStudies/CaseStudies';
 import Heading from '../../Components/Heading/Heading';
 import OpenPosition from './OpenPosition';
 
 const Career = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);    
+    }, []);
 
     const work = [
         {
@@ -53,23 +57,23 @@ const Career = () => {
     ]
     return (
         <div className=''>
-            <Heading title='career at HB-TM' />
+            <Heading title='career at HexaByte ™' />
 
-            <div className="py-12 bg-white text-center">
-                <section className="container mx-auto px-6 md:px-12 lg:px-24">
+            <div className="pt-12 bg-white ">
+                <section className="container mx-auto px-4 md:px-12 lg:px-24">
                     <h2 className='text-3xl font-bold text-[#123955] mb-3' >Join Our Innovative Team</h2>
-                    <p className=' text-yellow-700'>At HexaByte TM Solution, we believe in pushing the boundaries of technology and innovation. We are a group of passionate developers, designers, and strategists who work together to create world-class digital solutions. Our team thrives on collaboration, creativity, and continuous growth, making HexaByte TM Solution a place where you can grow your career and work on projects that make an impact.</p>
+                    <p className=' text-yellow-700'>At HexaByte ™ Solution, we believe in pushing the boundaries of technology and innovation. We are a group of passionate developers, designers, and strategists who work together to create world-class digital solutions. Our team thrives on collaboration, creativity, and continuous growth, making HexaByte ™ Solution a place where you can grow your career and work on projects that make an impact.</p>
 
 
                     <h2 className='text-3xl font-bold text-[#123955]  mt-10 mb-3' >Why Work with Us?</h2>
-                    <ul className=" pl-6 mb-4">
+                    <ul className=" mb-4">
                         {work?.map((fec, index) => (
                             <li key={index} className="text-yellow-700"><span className=' font-bold'>{fec.title}</span>: {fec.des}</li>
                         ))}
                     </ul>
 
                     <h2 className='text-3xl font-bold text-[#123955] mt-10 mb-3' >Our Core Values</h2>
-                    <ul className=" pl-6 mb-4">
+                    <ul className="mb-4">
                         {value?.map((fec, index) => (
                             <li key={index} className="text-yellow-700"><span className=' font-bold'>{fec.title}</span>: {fec.des}</li>
                         ))}
@@ -78,27 +82,27 @@ const Career = () => {
                 </section>
             </div>
 
-            <OpenPosition />
+            {/* <OpenPosition /> */}
 
-            <div className="py-12 bg-white text-center">
-                <section className="container mx-auto px-6 md:px-12 lg:px-24">
+            <div className="my-10  bg-white ">
+                <section className="container mx-auto px-4 md:px-12 lg:px-24">
                     <h2 className='text-3xl font-bold text-[#123955] mb-3' >Don’t See a Perfect Fit?</h2>
-                    <p className=' text-yellow-700'>We are always on the lookout for talented individuals. If you believe your skills align with our mission, feel free to send your resume to <span className='text-blue-500'>careers@hexabyte.com</span> and we’ll keep your details on file for future openings.</p>
+                    <p className=' text-yellow-700'>We are always on the lookout for talented individuals. If you believe your skills align with our mission, feel free to send your resume to <span className='text-blue-500'>hexabytetmsolution@gmail.com</span> and we’ll keep your details on file for future openings.</p>
 
 
                     <h2 className='text-3xl font-bold text-[#123955] mt-10 mb-10' >Our Hiring Process</h2>
-                    <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    <div className='grid gap-4 text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                         {
                             hire?.map((item, index) => <div key={index} className='bg-gradient-to-r from-[#658baf] to-[#123955] rounded-lg shadow-xl relative'>
                              <p className='absolute bg-yellow-400 top-2 right-2 px-3 py-1 rounded-full font-bold text-gray-700 shadow-2xl'>{index+1}</p>
-                             <p className='text-center text-gray-200 py-20 font-bold text-2xl'>{item}</p>
+                             <p className=' text-gray-200 py-20 font-bold text-2xl'>{item}</p>
                             </div>)
                         }
                     </div>
 
 
                     <h2 className='text-3xl font-bold text-[#123955] mb-3 mt-10' >Ready to Join Us?</h2>
-                    <p className=' text-yellow-700'>If you are passionate about technology and ready to make a difference, apply today and become part of the HexaByte TM Solution team. Let’s build the future together!</p>
+                    <p className=' text-yellow-700'>If you are passionate about technology and ready to make a difference, apply today and become part of the HexaByte™ Solution team. Let’s build the future together!</p>
                 </section>
             </div>
         </div>

@@ -36,15 +36,15 @@ const OurValues = () => {
     ];
 
     return (
-        <section className="bg-gradient-to-r from-[#658baf] to-[#123955] container mx-auto px-6 md:px-12 lg:px-24 py-12">
+        <section className=" container mx-auto px-4 md:px-12 lg:px-24 md:py-12 py-8">
             <div className="container mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-6 text-white">Our Values</h2>
+                <h2 className="text-3xl font-bold mb-6 text-[#123955]">Our Values</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {values.map((value, index) => (
                         <div key={index} className="border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                             <img src={value.logo} className='h-[60px] w-[60px] mx-auto ' alt="" />
-                            <h3 className="text-xl font-semibold mb-2 text-white mt-2">{value.title}</h3>
-                            <p className="text-gray-200">{value.description}</p>
+                            <h3 className="text-xl font-semibold mb-2 text-yellow-800 mt-2">{value.title}</h3>
+                            <p className="text-yellow-700">{value.description}</p>
                         </div>
                     ))}
                 </div>

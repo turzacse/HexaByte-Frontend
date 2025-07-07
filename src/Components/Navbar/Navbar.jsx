@@ -14,7 +14,7 @@ const Navbar = () => {
         { key: 5, title: 'Case Studies', address: '/case-studies' },
         { key: 6, title: 'Contact', address: '/contact-us' },
         { key: 6, title: 'How We Work', address: '/how-we-work' },
-        { key: 6, title: 'Admin', address: '/admin' },
+        // { key: 6, title: 'Admin', address: '/admin' },
     ];
 
     const toggleDrawer = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#658baf] text-white p-4 relative">
+        <nav className="bg-[#0B1226] text-white p-4 relative">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex md:hidden">
                     <IoMdMenu
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 <LogoText />
 
-                <div className="space-x-6 hidden md:flex">
+                <div className="space-x-4 hidden md:flex">
                     {Links.map((item) => (
                         // <NavLink key={item.key} to={item.address} className="hover:text-gray-300 uppercase font-semibold">
                         //     {item.title}
@@ -41,7 +41,7 @@ const Navbar = () => {
                             key={item.key}
                             to={item.address}
                             className={({ isActive }) =>
-                                isActive ? "text-yellow-500 uppercase font-semibold" : "hover:text-gray-300 uppercase font-semibold"
+                                isActive ? "text-yellow-500 uppercase font-semibold" : "hover:text-gray-300 font-semibold"
                             }
                         >
                             {item.title}
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <a href="#quote" className="bg-yellow-500 hover:bg-yellow-600 text-black md:py-2 md:px-4 py-1 px-2 rounded">
+                    <a href="/contact-us" className="bg-yellow-500 hover:bg-yellow-600 text-black md:py-2 md:px-4 py-1 px-2 rounded">
                         Get a Quote
                     </a>
                 </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
             {isDrawerOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-                    <div className="fixed top-0 left-0 w-56 h-full bg-[#658BAF] shadow-lg z-50 transition-transform transform">
+                    <div className="fixed top-0 left-0 w-56 h-full bg-[#0B1226] shadow-lg z-50 transition-transform transform">
                         <div className="flex justify-between p-4">
                             <LogoText />
                             <IoMdClose

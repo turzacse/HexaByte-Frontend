@@ -4,18 +4,22 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#658baf] text-white py-8">
+        <footer className="bg-[#0B1226] text-white py-8">
             <div className="md:container md:mx-auto px-4">
                 {/* Grid Layout for Footer Sections */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Left Section: Company Info */}
                     <div>
+                        <div className ='bg-white p-1 mb-5 h-[128px] rounded-md w-[128px]'>
+                            <img src="/tm.png" alt="" className='h-[120px] rounded-md' />
+                        </div>
                         <div className='flex gap-2'>
                             <LogoText /> <p className="md:text-2xl font-bold">Solution</p>
                         </div>
                         <p className="text-sm mt-2">
                             Innovative software solutions to power your business.
                         </p>
+                        
                     </div>
 
                     {/* Middle Section: Navigation Links */}
@@ -52,9 +56,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className ='mt-4'>
+                <hr />
+            </div>
 
             {/* Bottom Section: Copyright */}
-            <div className="text-center mt-8 text-sm text-gray-300">
+            <div className="text-center mt-4 text-sm text-gray-300">
                 &copy; {new Date().getFullYear()} HexaByte TM Solution. All rights reserved.
             </div>
         </footer>

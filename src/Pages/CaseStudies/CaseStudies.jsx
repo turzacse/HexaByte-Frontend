@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from '../../Components/Heading/Heading';
 import { caseStudiesData } from './CaseStudiesData';
 import { NavLink } from 'react-router-dom';
 
 const CaseStudies = () => {
+    useEffect(() => {window.scroll(0,0)} ,[])
     return (
         <div>
             {/* <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
@@ -13,7 +14,7 @@ const CaseStudies = () => {
                     <img src="https://i.ibb.co.com/Cwg8rdM/cons.png" alt="Construction Icon" className="w-32 h-32 mx-auto" />
                 </div>
             </div> */}
-            <Heading title='Our Case Studies' description={`Explore our successful projects where we've solved client problems through innovative tech solutions. Learn how we deliver results across different industries.`} />
+            <Heading title='Our Case Studies' description={`Explore our successful projects where we've solved .`} />
 
 
             <section className="py-12 bg-white">

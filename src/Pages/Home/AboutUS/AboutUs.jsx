@@ -15,8 +15,8 @@ const AboutUs = () => {
           {/* Text Section */}
 
           <div className="text-section flex-1">
-            <h2 className="text-3xl font-bold mb-4 text-[#123955]">
-              HexaByte TM Solution
+            <h2 className="text-3xl font-bold my-4 text-[#123955]">
+              HexaByte™ Solution
             </h2>
             <p className="text-lg text-black-700 mb-6 text-justify">
               We are a software company offering tailor-made solutions in web
@@ -33,11 +33,11 @@ const AboutUs = () => {
           </div>
 
           {/* Image Section */}
-          <div className="image-section flex-1">
+          <div className="image-section justify-end flex">
             <img
-              src="/HBTM.png" // Replace with your company/team image
+              src="/tm.png" // Replace with your company/team image
               alt="About HexaByte TM Solution"
-              className="rounded-lg md:h-[400px] md:w-[400px] h-[200px] w-[200px] "
+              className="rounded-lg md:h-[300px] md:w-[300px] h-[200px] w-[200px] "
             />
           </div>
         </div>

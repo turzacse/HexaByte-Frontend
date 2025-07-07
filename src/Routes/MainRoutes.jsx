@@ -5,6 +5,7 @@ import HexaBytes from "../Layout/HexaBytes";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import AskForService from "../Pages/AskForService/AskForService"
 import Service from "../Pages/Service/Service";
 import Testimonial from "../Pages/Testimonial/Testimonial";
 import Career from "../Pages/Career/Career";
@@ -21,6 +22,7 @@ import Emploee from "../AdminPages/Emploee/Emploee";
 import Instructor from "../AdminPages/Instructor/Instructor";
 import Project from "../AdminPages/Project/Projects";
 import LandingPage from "../Pages/LandingPage/LandingPage";
+import Offer from "../Pages/Offer/Offer";
 // import HowWeWork from "../Pages/HowWeWork/HowWeWork";
 
 
@@ -46,6 +48,13 @@ export const router = createBrowserRouter([
       {
         path: '/contact-us',
         element: <ContactUs />
+      },
+    {
+        path: '/offers',
+        element: <Offer />
+      },      {
+        path: '/ask-for-a-service',
+        element: <AskForService />
       },
       {
         path: '/service',

@@ -28,15 +28,15 @@ const About = () => {
             <Heading title='About Us' description='Innovative software solutions to power your business.' />
 
             {/* Company Overview Section */}
-            <section className="container mx-auto px-6 md:px-12 lg:px-24 py-12">
+            <section className="container mx-auto px-4 md:px-12 lg:px-24 py-8">
                 <h2 className="text-3xl font-bold text-center text-[#123955]">Who We Are</h2>
-                <div className="mt-6 flex flex-col md:flex-row items-center justify-between">
-                    <div className="md:w-1/2 p-4">
+                <div className="md:mt-6 flex flex-col md:flex-row items-center justify-between">
+                    <div className="md:w-1/2 py-4">
                         <p className="text-lg text-justify">
                         At HexaByte TM Solution, we are dedicated to delivering cutting-edge software solutions tailored to meet the unique needs of our clients. Our team of skilled professionals specializes in web development, mobile app development, and enterprise solutions, ensuring that your business operates efficiently and effectively. With a strong focus on innovation and quality, we strive to empower businesses to achieve their goals in the digital landscape.
                         </p>
                     </div>
-                    <div className="md:w-1/2 p-4 flex justify-end">
+                    <div className="md:w-1/2 py-4 flex justify-end">
                         <img src={image} alt="Our Team" className="rounded-lg shadow-lg h-[300px]" />
                         {/* <img src="https://backend.whalesai.com/public/imageai/13102024-9c2e91.png" alt="Our Team" className="rounded-lg shadow-lg h-[350px]" /> */}
                     </div>

@@ -1,4 +1,4 @@
-import Heading from "../Heading/Heading";
+import Heading from "../../Components/Heading/Heading";
 
 import icon1 from '../../assets/Icon/Work/we1.png'
 import icon2 from '../../assets/Icon/Work/we2.png'
@@ -93,13 +93,13 @@ const HowWeWork = () => {
     } ,[])
     return (
         <div>
-            <Heading title='Work Procedure' description='at HexaByte TM Solution' />
-            <section id="how-we-work" className="container mx-auto px-6 md:px-12 lg:px-24 bg-white ">
-                <div className="container mx-auto py-12">
+            <Heading title='Work Procedure' description='at HexaByte™ Solution' />
+            <section id="how-we-work" className="container mx-auto px-4 md:px-12 lg:px-24 bg-white ">
+                <div className="container mx-aut py-12">
                     <h2 className="text-3xl font-bold text-center mb-4 text-[#123955]">How We Work?</h2>
-                    <div className="md:text-center md:px-28 px-4 text-justify text-yellow-700">
+                    <div className="md:text-center md:px-28 text-justify text-yellow-700">
                         <p>
-                            At HexaByte TM Solution, we follow a structured Software Development Life Cycle (SDLC), ensuring each phase—planning, design, development, testing, and deployment—is carefully managed. This approach guarantees high-quality, tailored solutions with ongoing support to help your software grow with your business.</p>
+                            At HexaByte™ Solution, we follow a structured Software Development Life Cycle (SDLC), ensuring each phase—planning, design, development, testing, and deployment—is carefully managed. This approach guarantees high-quality, tailored solutions with ongoing support to help your software grow with your business.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6 ">
@@ -119,10 +119,10 @@ const HowWeWork = () => {
 
 
             {/* to-[#123955] */}
-            <section id="how-we-work" className="container mx-auto px-6 md:px-12 lg:px-24 bg-gradient-to-r from-[#658baf] to-[#123955]">
+            <section id="how-we-work" className="container mx-auto px-4 md:px-12 lg:px-24  mb-4">
                 <div className="container mx-auto py-12">
-                    <h2 className="text-3xl font-bold text-center mb-4 text-yellow-400 ">How We Work for Student ?</h2>
-                    <div className="md:text-center md:px-28 px-4 text-justify text-gray-200">
+                    <h2 className="text-3xl font-bold text-center mb-4 text-[#123955] ">How We Work for Student ?</h2>
+                    <div className="md:text-center md:px-28  text-justify text-yellow-700">
                         <p>
                             At HexaByte TM Solution, we provide personalized student care focused on academic excellence and programming skills. Through initial consultations, we understand each student’s unique needs and create tailored learning plans that include one-on-one guidance in programming, problem-solving, and academic subjects. Our ongoing support and mentorship ensure students build confidence and are well-prepared for future challenges.</p>
                     </div>

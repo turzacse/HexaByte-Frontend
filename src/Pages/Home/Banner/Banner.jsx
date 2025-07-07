@@ -1,16 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaLocationArrow } from "react-icons/fa";
 const Banner = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative md:h-screen h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Video */}
-      <video
+      {/* <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/banner background.mp4" // Replace with the actual video file path
         autoPlay
         loop
         muted
-      ></video>
+      ></video> */}
+      <img
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/bg1.gif" // Replace with the actual video file path
+        autoPlay
+        loop
+        muted
+      />
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/0"></div>
@@ -20,7 +28,7 @@ const Banner = () => {
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-4xl md:text-6xl font-bold mb-6"
+          className="text-4xl text-white md:text-6xl font-bold"
         >
           Welcome to HexaByte™
         </h1>
@@ -28,85 +36,46 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="500"
-          className="text-lg md:text-xl mb-8"
+          className="text-lg text-white font-bold md:text-xl mb-8"
         >
-          Empowering innovation through technology.
+          Innovative Software Solution.
         </p>
         <p
           data-aos="fade-up"
           data-aos-duration="1400"
           data-aos-delay="700"
-          className="text-base md:text-lg italic mb-8"
+          className="text-base text-white md:text-lg italic mb-8"
         >
-          "Building a better future, byte by byte."
+          Building a better future, byte by byte.
         </p>
 
-        <Link
-          className="bg-indigo-900 text-white px-6 py-3 text-lg rounded-md hover:bg-indigo-700 transition"
+        <div className='flex items-center justify-center'>
+          <Link
+          className="bg-indigo-900 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition flex items-center gap-2 "
           to="/about"
           data-aos="fade-up"
           data-aos-duration="1600"
           data-aos-delay="900"
         >
-          Learn More
+          <FaLocationArrow />
+          Ask For a Service
         </Link>
         <Link
            data-aos="fade-up"
            data-aos-duration="1600"
            data-aos-delay="900"
-          className="bg-white-500 text-white px-6 py-3 text-lg rounded-md ml-4 hover:bg-yellow-600 transition"
-          onClick={() => alert("Get a Quote!")}
-        >
+           to="/contact-us"
+          className="bg-white-500 text-black px-4 py-2  rounded-md ml-4 hover:bg-yellow-600 bg-yellow-500 transition flex items-center gap-2 "
+          // onClick={() => alert("Get a Quote!")}
+        > 
+        <FaLocationArrow />
           Get a Quote
         </Link>
+        </div>
+
+        
       </div>
     </div>
-
-    // <div className='flex items-center bg-[#173A63]'
-    //     style={{
-    //         background: `linear-gradient(135deg, #13345D, #14365F, #0A254D, #0A254D, #0A254D, #0A254D, )`,
-    //     }}
-    // >
-    //     {/* <img className='w-1/2 md:h-[520px]' src="./2b.PNG" alt="" />
-    //     <img
-    //         style={{ transform: 'scaleX(-1)' }}
-    //         className='w-1/2 md:h-[520px]' src="./2b.PNG" alt="" /> */}
-
-    //     {/* <div
-    //         style={{
-    //             position: 'absolute',
-    //             top: '50%',
-    //             left: '50%',
-    //             transform: 'translate(-50%, -50%)',
-    //             color: '#ffffff',
-    //             fontSize: '24px',
-    //             fontWeight: 'bold',
-    //             backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    //             padding: '10px 20px',
-    //             borderRadius: '5px',
-    //             textAlign: 'center',
-    //         }}
-    //     >
-    //         <div
-    //             style={{
-    //                 position: 'absolute',
-    //                 top: '50%',
-    //                 left: '50%',
-    //                 transform: 'translate(-50%, -50%)',
-    //                 color: '#ffffff',
-    //                 fontSize: '18px',
-    //                 fontWeight: 'bold',
-    //                 backgroundColor: '#CA8A04',
-    //                 padding: '10px 20px',
-    //                 borderRadius: '5px',
-    //                 textAlign: 'center',
-    //                 width: '150px'
-    //             }}
-    //         >
-    //             Get a Quote
-    //         </div>
-    //     </div> */}
-    // </div>
   );
 };
 

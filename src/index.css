@@ -2,11 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-.primary-background{
-    background:#ffffff;
-    color: black;
+.primary-background {
+  background: #ffffff;
+  color: black;
 }
 
-.primary-button{
-    background:#F9A825;
+.primary-button {
+  background: #f9a825;
+}
+
+body {
+  /* font-family: 'Manrope', 'Segoe UI', 'Roboto', sans-serif; */
+  /* font-family: "Libertinus Mono", monospace; */
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 25s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-right {
+  display: inline-flex;
+  animation: scroll-right 60s linear infinite;
 }
